@@ -45,7 +45,7 @@ sgdisk -d 1 /dev/sda
 sgdisk -N 1 /dev/sda
 partprobe /dev/sda
 
-mkfs.ext4 -F /dev/sda1 # wipes all data!
+mkfs.ext4 -L nixos -F /dev/sda1 # wipes all data!
 
 mount /dev/sda1 /mnt
 
